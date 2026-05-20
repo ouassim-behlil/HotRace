@@ -1,6 +1,6 @@
 # HotRace
 
-A fast, lightweight key-value store implemented in C using a hash map with open addressing and chaining for collision resolution. Built for learning purpose.
+A fast, lightweight key-value store implemented in C using a hash map with separate chaining for collision resolution. Built for learning purpose.
 
 ---
 
