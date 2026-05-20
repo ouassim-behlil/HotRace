@@ -1,7 +1,7 @@
 #include "include/hotrace.h"
 
 
-t_entry	*create_entry(char *key, char *value, unsigned int hash)
+t_entry	*create_entry(const char *key, const char *value, unsigned int hash)
 {
 	t_entry			*entry;
 
