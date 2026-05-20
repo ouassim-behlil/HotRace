@@ -27,3 +27,15 @@ char	*ft_strcpy(char *dest, const char *src)
 	*dest = '\0';
 	return (start);
 }
+
+void	ft_putstr(const char *str)
+{
+	const char	*s;
+
+	s = str;
+	while (*s)
+	{
+		write(1, s, 1);
+		s++;
+	}
+}
