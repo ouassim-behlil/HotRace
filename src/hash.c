@@ -10,6 +10,7 @@ unsigned int	fnv1a_32(const char *s)
 	{
 		h ^= (unsigned char)*s;
 		h *= 16777619u;
+		s ++;
 	}
 	return (h);
 }
