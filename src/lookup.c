@@ -27,6 +27,10 @@ char	*lookup(char *key, t_hashmap *map)
 	}
 	hash = fnv1a_32(key);
 	index = hash % map->capacity;
+	if (!map->buckets[index])
+	{
+		return (NULL);
+	}
 	if (map->buckets[index]->hash == hash)
 	{
 		return (map->buckets[index]->value);
