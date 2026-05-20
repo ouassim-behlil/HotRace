@@ -40,5 +40,10 @@ char			*lookup(char *key, t_hashmap *map);
 // utils.c
 void			*ft_memset(void *ptr, int value, size_t n);
 char			*ft_strcpy(char *dest, const char *src);
+void			ft_putstr(const char *str);
+
+// io_process.c
+void			store_data(t_hashmap *map);
+void			fetch_data(t_hashmap *map);
 
 #endif

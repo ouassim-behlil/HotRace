@@ -10,8 +10,8 @@ SRC = \
 	src/insert.c \
 	src/lookup.c \
 	src/main.c \
-	src/read_params.c \
-	src/utils.c
+	src/utils.c \
+	src/io_process.c
 
 OBJ = $(SRC:.c=.o)
 
