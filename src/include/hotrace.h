@@ -20,7 +20,7 @@ typedef struct	s_hashmap
 }	t_hashmap;
 
 // entry.c
-t_entry			*create_entry(char *key, char *value, unsigned int hash);
+t_entry			*create_entry(const char *key, const char *value, unsigned int hash);
 void			delete_entry(t_entry *entry);
 
 // hash.c
@@ -32,5 +32,13 @@ void			delete_map(t_hashmap *map);
 
 // insert.c
 int				insert(const char *key, const char *value, t_hashmap *map);
+
+// lookup.c
+char			*lookup(char *key, t_hashmap *map);
+
+
+// utils.c
+void			*ft_memset(void *ptr, int value, size_t n);
+char			*ft_strcpy(char *dest, const char *src);
 
 #endif
